@@ -51,6 +51,7 @@ public class Fragment_Shujia_collect extends Fragment implements PullToRefreshBa
     }
     private void initData() {
         //查询数据库中的数据
+        //让你看到修改后的效果，傻老婆。么么么大
         try {
             comics=MainActivity.dbUtils.findAll(Comic.class);
         } catch (DbException e) {
