@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scoll_shujia_collect"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<com.yztc.myview.MyGridView
+    android:id="@+id/gv_shujia_collect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:horizontalSpacing="10dp"
+    android:numColumns="3"
+    android:layout_marginTop="15dp"
+    android:verticalSpacing="5dp"
+    />
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

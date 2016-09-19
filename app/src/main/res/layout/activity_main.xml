@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <RelativeLayout
+        android:id="@+id/rl_all"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rg_all"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/fragment_tuijian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.yztc.guagua3.Fragment_Tuijian">
+
+        </fragment>
+        <fragment
+            android:id="@+id/fragment_shujia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.yztc.guagua3.Fragment_Shujia">
+
+        </fragment>
+        <fragment
+            android:id="@+id/fragment_fenlei"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.yztc.guagua3.Fragment_fenlei">
+
+        </fragment>
+        <fragment
+            android:id="@+id/fragment_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.yztc.guagua3.Fragment_More">
+
+        </fragment>
+
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/rg_all"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:id="@+id/rb_tuijian"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_tuijian"
+            android:button="@null" />
+        <RadioButton
+            android:id="@+id/rb_shujia"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_shujia"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/rb_fenlei"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_fenlei"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/rb_more"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_gengduo"
+            android:button="@null"/>
+    </RadioGroup>
+
+</RelativeLayout>

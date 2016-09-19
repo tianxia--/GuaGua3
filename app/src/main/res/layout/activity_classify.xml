@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_back"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_conmic_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/iv_conmic_classify"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_cache_menubtn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/tv_conmic_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门"
+            android:textColor="#ffffff"
+            android:layout_toLeftOf="@id/iv_conmic_classify"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_conmic_classify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

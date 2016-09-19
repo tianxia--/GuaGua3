@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_tuijian"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_tuijian_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_tuijian_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="text"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:background="#c5c1c1"
+
+                    />
+            </RelativeLayout>
+
+            <com.yztc.myview.MyGridView
+                android:id="@+id/mgv_tuijian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:layout_marginTop="15dp"
+                android:verticalSpacing="5dp">
+
+            </com.yztc.myview.MyGridView>
+        </LinearLayout>
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

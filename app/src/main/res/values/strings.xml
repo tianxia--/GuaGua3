@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GuaGua3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="table_title">
+        <item>热门连载</item>
+        <item>小编推荐</item>
+        <item>精彩港漫</item>
+        <item>最近更新</item>
+    </string-array>
+</resources>
