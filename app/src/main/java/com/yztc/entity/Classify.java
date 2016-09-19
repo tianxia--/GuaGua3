@@ -7,7 +7,7 @@ public class Classify {
     private String title;
     private String thumb;
     private int  cateId;
-
+    //我修改了这个文件
     public Classify(String title, int cateId, String thumb) {
         this.title = title;
         this.cateId = cateId;
