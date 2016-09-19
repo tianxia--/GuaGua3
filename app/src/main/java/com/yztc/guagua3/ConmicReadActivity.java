@@ -1,6 +1,7 @@
 package com.yztc.guagua3;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,6 +9,7 @@ import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -50,7 +52,6 @@ public class ConmicReadActivity extends AppCompatActivity{
             conmics= Paser_ReadConmic.getList(json);
             if(conmics!=null){
                 imgs=conmics.getAddrs();
-
                 if(imgs!=null&&imgs.length!=0){
                     //tv_num2.setText(imgs.length);
                     for (int i=0;i<imgs.length;i++){
@@ -67,6 +68,8 @@ public class ConmicReadActivity extends AppCompatActivity{
     //加载图片 渐进式加载
     public void imageLoad(String url){
         SimpleDraweeView simpleDrawee=new SimpleDraweeView(ConmicReadActivity.this);
+        simpleDrawee.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
         ImageRequest request= ImageRequestBuilder.newBuilderWithSource(Uri.parse(url)).
                 setProgressiveRenderingEnabled(true).build();
         PipelineDraweeController controller= (PipelineDraweeController)
@@ -93,12 +96,13 @@ public class ConmicReadActivity extends AppCompatActivity{
         String url= path.CONMIC+charpterid;
         //请求网络加载数据
         getHttp(url);
-        /*//设置总页数
-        if(imgs.length!=0){
-            tv_num2.setText(imgs.length);
-        }*/
-
         //设置电量
+        IntentFilter filter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+        Buttery receiver = new Buttery(tv_dian);
+        //注册广播接收器
+        registerReceiver(receiver, filter);
+        //设置title
+        //tv_title.setText(conmics.getTitle());
 
     }
     //请求网络加载数据

@@ -1,5 +1,13 @@
 [
     {
+        "merged": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
         "merged": "C:\\Users\\chenpengfei_d\\Desktop\\xiangha\\guagua\\guagua9-18\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
         "source": "C:\\Users\\chenpengfei_d\\Desktop\\xiangha\\guagua\\guagua9-18\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
     },

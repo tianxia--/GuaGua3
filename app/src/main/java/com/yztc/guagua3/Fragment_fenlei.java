@@ -63,7 +63,6 @@ public class Fragment_fenlei extends Fragment implements View.OnClickListener,Ad
     }
 
     private void initData() {
-
         //访问网络获取json数据,填充gridview
         getHttp(path.PATH_CLASSIFY);
         //点击搜索图标跳转页面
@@ -78,7 +77,6 @@ public class Fragment_fenlei extends Fragment implements View.OnClickListener,Ad
         imageView= (ImageView) view.findViewById(R.id.iv_search);
 
     }
-
     public void getHttp(String url) {
         try {
             okhttp.getInstance().run(url).enqueue(new Callback() {

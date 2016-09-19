@@ -70,7 +70,6 @@ public class ConmicActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_conmic);
         //初始化控件
         initView();
-
         //接收传递的id的值
         Intent intent=getIntent();
         comicId=intent.getIntExtra("comicId",0);
@@ -165,31 +164,14 @@ public class ConmicActivity extends AppCompatActivity implements View.OnClickLis
                 intent.putExtra("comicId",comicId);
                 startActivity(intent);
                 break;
-            //点击开始阅读 跳转到相应的漫画页面
+            //点击开始阅读 跳转到相应的漫画章节列表页面
             case R.id.togbtn_conmic_read:
                 intent=new Intent(ConmicActivity.this,ConmicReadActivity.class);
                 intent.putExtra("charpterId",charpterId);
                 startActivity(intent);
+
+
                 break;
-            /*//点击收藏按钮，将收藏的漫画显示到书架中
-            case R.id.tv_conmic_collect:
-                if(tv_conmic_collect.getText().equals("添加收藏")){
-                    Comic comic=new Comic(comicId,imgUrl,conmicTitle);
-                    try {
-                        MainActivity.dbUtils.save(comic);
-                    } catch (DbException e) {
-                        e.printStackTrace();
-                    }
-                    tv_conmic_collect.setText("已经收藏");
-                }else{
-                    tv_conmic_collect.setText("添加收藏");
-                    try {
-                        MainActivity.dbUtils.delete(Comic.class, WhereBuilder.b("id","=","comicId"));
-                    } catch (DbException e) {
-                        e.printStackTrace();
-                    }
-                }
-                break;*/
         }
     }
     //listView添加点击事件，跳转到相应的漫画章节列表

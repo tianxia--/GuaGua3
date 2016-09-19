@@ -64,7 +64,6 @@ public class MyBaseAdapter_Classify extends BaseAdapter{
         holder.textView.setText(list.get(position).getTitle());
         String imgUrl=list.get(position).getThumb();
         Picasso.with(context).load(imgUrl).transform(new CircleTransform()).into(holder.imageView);
-
         return convertView;
     }
 

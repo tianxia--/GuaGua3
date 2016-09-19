@@ -39,11 +39,15 @@ public class Fragment_Shujia_collect extends Fragment implements PullToRefreshBa
         view=inflater.inflate(R.layout.fragment_shujia_collect,null);
         initView();
         initData();
+        //上下拉刷新
         scrollView.setOnRefreshListener(this);
+        //gridview长按事件
         gridView.setOnItemLongClickListener(this);
+        //gridview点击事件
         gridView.setOnItemClickListener(this);
         return view;
     }
+    //重新获取焦点  查询数据库
     @Override
     public void onResume(){
         super.onResume();
@@ -51,7 +55,6 @@ public class Fragment_Shujia_collect extends Fragment implements PullToRefreshBa
     }
     private void initData() {
         //查询数据库中的数据
-        //让你看到修改后的效果，傻老婆。么么么大
         try {
             comics=MainActivity.dbUtils.findAll(Comic.class);
         } catch (DbException e) {
@@ -59,13 +62,12 @@ public class Fragment_Shujia_collect extends Fragment implements PullToRefreshBa
         }
         adapter=new MyBaseAdapter_Collect(getActivity(),comics);
         if(comics != null && comics.size()!=0){
-
             gridView.setAdapter(adapter);
         }else{
             Toast.makeText(getActivity(),"还未收藏任何漫画哦...",Toast.LENGTH_SHORT).show();
         }
     }
-
+    //初始化view
     private void initView() {
         gridView= (MyGridView) view.findViewById(R.id.gv_shujia_collect);
         scrollView= (PullToRefreshScrollView) view.findViewById(R.id.scoll_shujia_collect);
@@ -77,9 +79,8 @@ public class Fragment_Shujia_collect extends Fragment implements PullToRefreshBa
         selectDb();
         scrollView.onRefreshComplete();
     }
-
+    //查询数据库中的数据
     private void selectDb() {
-        //查询数据库中的数据
         try {
             comics=MainActivity.dbUtils.findAll(Comic.class);
         } catch (DbException e) {
@@ -124,7 +125,7 @@ public class Fragment_Shujia_collect extends Fragment implements PullToRefreshBa
             }
         });
         builder.show();
-        return false;
+        return true;
     }
 
     @Override

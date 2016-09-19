@@ -1,7 +1,19 @@
 [
     {
+        "merged": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
+    },
+    {
         "merged": "C:\\Users\\chenpengfei_d\\Desktop\\xiangha\\guagua\\guagua9-18\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
         "source": "C:\\Users\\chenpengfei_d\\Desktop\\xiangha\\guagua\\guagua9-18\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
     },
     {
         "merged": "C:\\Users\\chenpengfei_d\\Desktop\\xiangha\\guagua\\guagua9-18\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\indicator_arrow.png",

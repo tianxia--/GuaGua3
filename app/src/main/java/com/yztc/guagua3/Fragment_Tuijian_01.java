@@ -59,6 +59,7 @@ public class Fragment_Tuijian_01 extends Fragment implements PullToRefreshBase.O
             String json = (String) msg.obj;
             switch (msg.what){
                 case 1:
+                    //获取到底部图片数据
                     data = Tuijian_hot.fromJson(json);
                     if(data!=null){
                         textView.setText(data.getTitle());
@@ -169,7 +170,6 @@ public class Fragment_Tuijian_01 extends Fragment implements PullToRefreshBase.O
         int comid = new Integer(comicId);
         String title=totalconmics.get(position).getTitle();
         String thimb=totalconmics.get(position).getThumb();
-
         intent.putExtra("comicId", comid);
         intent.putExtra("charpterId",charpterId);
         intent.putExtra("title",title);

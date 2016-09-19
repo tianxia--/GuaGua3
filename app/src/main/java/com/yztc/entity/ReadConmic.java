@@ -1,7 +1,7 @@
 package com.yztc.entity;
 
 /**
- * Created by Administrator on 2016/9/18.
+ * Created by Administrator on 2016/9/18. private String[] addrs;
  */
 public class ReadConmic {
     private String title;
@@ -9,7 +9,7 @@ public class ReadConmic {
     private long updateTime;
     private int counts;
     private double size;
-    private String[] addrs;
+
 
     public ReadConmic(String title, int sid, long updateTime, int counts, double size, String[] addrs) {
         this.title = title;

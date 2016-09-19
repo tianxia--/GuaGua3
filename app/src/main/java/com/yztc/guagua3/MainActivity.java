@@ -23,7 +23,7 @@ import android.widget.RadioGroup;
 import com.lidroid.xutils.DbUtils;
 
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener{
-    private RadioGroup group;//单选按钮布局
+    private RadioGroup group;//底部按钮布局
     private Fragment_fenlei fragment_fenlei;//分类页面
     private Fragment_More fragment_more;//更多页面
     private Fragment_Shujia fragment_shujia;//书架页面
@@ -43,13 +43,16 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
 
     }
+    //初始化数据
     private void initData(){
         manager=getSupportFragmentManager();
         transaction=manager.beginTransaction();
+        //获取每个fragment
         fragment_fenlei= (Fragment_fenlei) manager.findFragmentById(R.id.fragment_fenlei);
         fragment_more= (Fragment_More) manager.findFragmentById(R.id.fragment_more);
         fragment_shujia= (Fragment_Shujia) manager.findFragmentById(R.id.fragment_shujia);
         fragment_tuijian= (Fragment_Tuijian) manager.findFragmentById(R.id.fragment_tuijian);
+        //显示当前fragment，隐藏其他
         transaction.hide(fragment_fenlei).hide(fragment_shujia).
                 hide(fragment_more).show(fragment_tuijian);
         transaction.commit();
@@ -93,18 +96,22 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         FragmentTransaction trans=manager.beginTransaction();
+        //推荐界面
         if(checkedId==rb_tuijian.getId()){
             trans.show(fragment_tuijian).hide(fragment_more).hide(fragment_shujia).
                     hide(fragment_fenlei);
         }
+        //书架
         if(checkedId==rb_shujia.getId()){
             trans.show(fragment_shujia).hide(fragment_more).hide(fragment_tuijian).
                     hide(fragment_fenlei);
         }
+        //分类
         if(checkedId==rb_fenlei.getId()){
             trans.hide(fragment_shujia).hide(fragment_more).hide(fragment_tuijian).
                     show(fragment_fenlei);
         }
+        //更多
         if(checkedId==rb_more.getId()){
             trans.show(fragment_more).hide(fragment_fenlei).hide(fragment_tuijian).
                     hide(fragment_shujia);

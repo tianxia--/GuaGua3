@@ -1,11 +1,27 @@
 [
     {
+        "merged": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
+        "source": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
         "merged": "C:\\Users\\chenpengfei_d\\Desktop\\xiangha\\guagua\\guagua9-18\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
         "source": "C:\\Users\\chenpengfei_d\\Desktop\\xiangha\\guagua\\guagua9-18\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
     },
     {
+        "merged": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
         "merged": "C:\\Users\\chenpengfei_d\\Desktop\\xiangha\\guagua\\guagua9-18\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
         "source": "C:\\Users\\chenpengfei_d\\Desktop\\xiangha\\guagua\\guagua9-18\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
+        "source": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
+    },
+    {
+        "merged": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "E:\\studio_git\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
     },
     {
         "merged": "C:\\Users\\chenpengfei_d\\Desktop\\xiangha\\guagua\\guagua9-18\\GuaGua3\\pullToRefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",

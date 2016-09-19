@@ -24,27 +24,29 @@ public class Fragment_Tuijian extends Fragment implements TabLayout.OnTabSelecte
     private List<Fragment> list=new ArrayList<>();
     private MyFragmentPagerAdapter adapter;
     private View view=null;
-
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_tuijian, null);
         //初始化控件
         initView();
+        //初始化viewpager并且适配数据
+        initPager();
+        initData();
+        return view;
+    }
+
+    private void initData() {
         //给TabLayout添加标题内容
         for (int i = 0; i < titles.length; i++) {
             tabLayout.addTab(tabLayout.newTab().setText(titles[i]));
         }
-        //初始化viewpager并且适配数据
-        initPager();
-
         //添加ViewPager的监听器
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         //tablayout添加点击切换viewpager
         tabLayout.setOnTabSelectedListener(this);
-        return view;
     }
+
     //初始化控件
     private void initView() {
         tabLayout = (TabLayout) view.findViewById(R.id.tuijian_tl);
